@@ -1,6 +1,6 @@
 {
     "name": "ovale",
-    "version": "9.1.3",
+    "version": "9.1.4",
     "description": "Show the icon of the next spell to cast",
     "main": "dist/index.js",
     "scripts": {
@@ -8,7 +8,7 @@
         "prepare": "husky install",
         "build": "tstolua -p tsconfig.lua.json",
         "build-tools": "tsc",
-        "simc": "node dist/src/utils/importsimc/index.js ../../simc",
+        "simc": "node dist/src/utils/importsimc/index.js",
         "dbc": "node dist/src/utils/dbc.js",
         "watch": "tstolua -p tsconfig.lua.json -w",
         "watch-tools": "tsc -w",
@@ -24,7 +24,7 @@
     ],
     "license": "ISC",
     "dependencies": {
-        "@types/node": "^15.12.2",
+        "@types/node": "^16.4.5",
         "@wowts/ace_comm-3.0": "^1.1.0",
         "@wowts/ace_config-3.0": "^1.1.0",
         "@wowts/ace_config_dialog-3.0": "^1.0.3",
@@ -63,7 +63,7 @@
     "devDependencies": {
         "@commitlint/cli": "^12.1.4",
         "@commitlint/config-conventional": "^12.1.4",
-        "@typescript-eslint/eslint-plugin": "^4.28.2",
+        "@typescript-eslint/eslint-plugin": "^4.28.5",
         "@typescript-eslint/parser": "^4.28.2",
         "@wowts/tstolua": "^1.13.4",
         "commitlint": "^12.1.4",
